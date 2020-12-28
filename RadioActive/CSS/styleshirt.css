@@ -1,0 +1,320 @@
+    /*Diseños generales de la pagina*/
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image: url(../img/fondo.jpg);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /*Fuentes personalizadas*/
+    @font-face{
+        font-family: Fuente1;
+        src: url(../fonts/Neufreit-ExtraBold.otf);
+    }
+    @font-face{
+        font-family: FuenteTitle;
+        src: url(../fonts/Crowny.otf);
+    }
+    @font-face{
+        font-family: FuenteLogo;
+        src: url(../fonts/principal.ttf);
+    }
+    /*Diseño de la cabecera de la pagina*/
+    #header{
+        width: 100%;
+        background-color: #18abd8;
+        display: grid;
+        grid-template-columns: 25% auto;
+        grid-template-rows: auto;
+    }
+
+    #logo img{
+        width: 37%;
+        height: 100px;
+        display: block;
+        margin: 0px auto;
+    }
+    #logo h1{
+        text-align: center;
+        font-family: FuenteLogo;
+        color: #ffa206;
+    }
+
+    #navigation-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #list-options{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto;
+        justify-content: space-evenly;
+    }
+    #list-options > .option{
+        font-family: Fuente1;
+        list-style: none;
+    }
+
+    #list-options li a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+    /*Diseño del cuerpo de la pagina*/
+    #body{
+        /*
+        padding: 50px;
+        */
+        display: grid;
+        grid-template-columns: 100px 500px 30px 280px 100px;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
+        width: 90%;
+        margin: 0px auto;
+        background-color: lightslategray;
+
+    }
+    #name-shirt{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        line-height: 100px;
+        text-align: center;
+        font-family: FuenteTitle;
+        font-size: 30px;
+        cursor: default;
+    }
+    #photo{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 6;
+    }
+    #photo img{
+        display: block;
+        width: 364px;
+        margin: 0px auto;
+        cursor: pointer;
+    }
+    #lightbox{
+        width: 90%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        background: rgba(0,0,0,.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #lightbox img{
+        width: 50%;
+    }
+    #lightbox .btn-close{
+    width: 40px;
+    height: 40px;
+    background: #569929;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    cursor: pointer;
+    line-height: 40px;
+    }
+    #price{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        line-height: 25px;
+        padding: 22px 0px 0px 10px;
+        border-radius: 6px;
+        border: 1px solid black;
+    }
+    #form-pay{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 3; 
+        grid-row-end: 6;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    #tallas{
+        order: 1;
+        border-radius: 5px;
+        height: 50px;
+        margin: 10px 0px;
+        line-height: 25px;
+        border: 1px solid black;
+    }
+    #tallas .talla input{
+        margin-left: 30px;
+    }
+    #colors .color input{
+        margin-left: 4px;
+    }
+    #colors{
+        order: 2;
+        border-radius: 5px;
+        height: 50px;
+        margin: 10px 0px;
+        line-height: 25px;
+        border: 1px solid black;
+    }
+    #add-shopcart{
+        order: 3;
+        border-radius: 5px;
+        height: 50px;
+        margin: 10px 0px;
+        line-height: 40px;
+        border: 1px solid black;
+        padding-top: 5px;
+    }
+    #add-shopcart button{
+        font-size: 15px;
+        height: 35px;
+        border-radius: 7px;
+        border: 1px solid white;
+    }
+    #add-shopcart a{
+        font-size: 20px;
+        color: black;
+    }
+    #shirt-models{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    #description-shirt{
+        margin-top: 10px;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 7;
+        grid-row-end: 8;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    /*Caracteristicas del cuadro de contacto*/
+    #contacto{
+        position: fixed;
+        margin-left: 83%;
+        margin-top: 340px;
+        width: 170px;
+        height: 90px;
+        z-index: 3;
+    }
+    #contacto .redes{
+        margin-top: 7px;
+        background-color: black;
+        border-radius: 5px;
+        height: 35px;
+        line-height: 35px;
+    }
+    #contacto .redes a{
+        text-decoration: none;
+        color: white;
+        display: block;
+        width: 170px;
+        border-radius: 4px;
+        text-align: center;
+    }
+    #contacto .redes .fa-facebook-messenger{
+        color: #1877f2;
+        font-size: 18px;
+    }
+    #contacto .redes .fa-whatsapp{
+        color: #00e676;
+        font-size: 18px;
+    }
+    /*Diseño del footer*/
+    #footer{
+        background-color: black;
+        height: 200px;
+        width: 100%;
+        color: white;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 150px 55px; 
+    }
+    #data-payment{
+        text-align: center;
+        padding-top: 20px;
+    }
+    #icon-pay{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows:50px;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #footer #icon-pay img{
+        display: block;
+        width: 53px;
+        height: 40px;
+        justify-self: center;
+    }
+    #data-page{
+        grid-column: 1 / 3 ;
+        background-color: #ffa206;
+        color: black;
+    }
+    #data-page div{
+        height: 80%;
+        text-align: center;
+        margin-top: 6px;
+    }
+    /*Caractertisticas de contacto*/
+    #data-contact{
+        text-align: center;
+        line-height: 70px;
+        text-decoration: none;
+        border-left: 1px solid white;
+    }
+    #data-contact .fab{
+        color: white;
+        text-decoration-line: none;
+        margin: 17px;
+        font-size: 25px;
+    }
+
+    /*Caracteristicas de data group*/
+    #programmer{
+        width: 50px;
+        height: 20px;
+    }
+    /*Pseudoclases de la clase polo*/
+    #body .polo .image-t-shirt:hover .second{
+        z-index: 2;
+    }
+
+    #body #contacto .redes :hover {
+        background-color: #0c51b9;
+    }
+    #list-options li a:hover{
+        color: #ffc60b;
+        text-decoration-color: #ffc60b;
+    }
+    #data-contact .fab:hover{
+        color: #ffc60b;
+    }
+    #add-shopcart a:hover{
+        color:  #ffc60b;
+    }
+    #add-shopcart button:hover{
+        cursor: pointer;
+        background-color:  #ffc60b;
+        border:1px solid  #ffc60b;
+    }

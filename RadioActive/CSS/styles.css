@@ -1,0 +1,220 @@
+/*Diseños generales de la pagina*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../img/fondo.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Fuentes personalizadas*/
+@font-face{
+    font-family: Fuente1;
+    src: url(../fonts/Neufreit-ExtraBold.otf);
+}
+@font-face{
+    font-family: FuenteLogo;
+    src: url(../fonts/principal.ttf);
+}
+@font-face{
+    font-family: FuenteTitle;
+    src: url(../fonts/Crowny.otf);
+}
+/*Diseño de la cabecera de la pagina*/
+#header{
+    width: 100%;
+    /*Color opcional de fondo header*/
+    /*background-color: #e1195b;*/
+    background-color: #18abd8;
+    display: grid;
+    grid-template-columns: 25% auto;
+    grid-template-rows: auto;
+}
+
+#logo img{
+    width: 37%;
+    height: 100px;
+    display: block;
+    margin: 0px auto;
+}
+#logo h1{
+    text-align: center;
+    font-family: FuenteLogo;
+    color: #ffa206;
+}
+
+#navigation-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#list-options{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+}
+#list-options > .option{
+    font-family: Fuente1;
+    list-style: none;
+}
+
+#list-options li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    /*Colores opcionales de degradado lineal titulo*/
+    /*
+    text-shadow: 2px 2px 6px black;
+    color: white;
+    */ 
+}
+/*Diseño del cuerpo de la pagina*/
+#body{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows:  380px 380px 380px 380px;
+}
+#body .polo{
+    display: grid;
+    box-shadow: 1px 2px 3px 5px #ccc,;
+    margin: 10px;
+    color: white;
+}
+#body .polo .image-t-shirt{
+    width: 280px;
+    margin: 0px auto;
+    height: 305px;
+}
+#body .polo a{
+    justify-self: center;
+}
+#body .polo a .pic{
+    width: 280px; 
+    position: absolute;
+}
+#body .polo div a .first{
+    z-index: 1;
+}
+#body .polo div a .second{
+    z-index: 0;
+}
+#body .polo .details-product{
+    justify-self: center;
+}
+#body .polo .details-product > h3{
+    text-align: center;
+    font-family: FuenteTitle;
+    font-size: 35px;
+    color: white;
+}
+/*Caracteristicas del cuadro de contacto*/
+#contacto{
+    position: fixed;
+    margin-left: 83%;
+    margin-top: 170px;
+    width: 170px;
+    height: 90px;
+    z-index: 3;
+}
+#contacto .redes{
+    margin-top: 7px;
+    background-color: black;
+    border-radius: 5px;
+    height: 35px;
+    line-height: 35px;
+}
+#contacto .redes a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 170px;
+    border-radius: 4px;
+    text-align: center;
+}
+#contacto .redes .fa-facebook-messenger{
+    color: #1877f2;
+    font-size: 18px;
+}
+#contacto .redes .fa-whatsapp{
+    color: #00e676;
+    font-size: 18px;
+}
+/*Diseño del footer*/
+#footer{
+    background-color: black;
+    height: 200px;
+    width: 100%;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 150px 55px; 
+}
+#data-payment{
+    text-align: center;
+    padding-top: 20px;
+}
+#icon-pay{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows:50px;
+    align-items: center;
+    margin-top: 20px;
+}
+#footer #icon-pay img{
+    display: block;
+    width: 53px;
+    height: 40px;
+    justify-self: center;
+}
+#data-page{
+    grid-column: 1 / 3 ;
+    background-color: #ffa206;
+    color: black;
+}
+#data-page div{
+    height: 80%;
+    text-align: center;
+    margin-top: 6px;
+}
+/*Caractertisticas de contacto*/
+#data-contact{
+    text-align: center;
+    line-height: 70px;
+    text-decoration: none;
+    border-left: 1px solid white;
+}
+#data-contact .fab{
+    color: white;
+    text-decoration-line: none;
+    margin: 17px;
+    font-size: 25px;
+}
+
+/*Caracteristicas de data group*/
+#programmer{
+    width: 50px;
+    height: 20px;
+}
+/*Pseudoclases de la clase polo*/
+#body .polo .image-t-shirt:hover .second{
+    z-index: 2;
+}
+#body #contacto .redes :hover {
+    background-color: #0c51b9;
+}
+#list-options li a:hover{
+    color: #ffc60b;
+    text-decoration-color: #ffc60b;
+}
+#data-contact .fab:hover{
+    color: #ffc60b;
+}
+#body .polo .details-product > h3:hover{
+    color: #ceaa1e;
+    cursor: default;
+}

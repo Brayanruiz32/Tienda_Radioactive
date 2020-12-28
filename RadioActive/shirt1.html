@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<title>RadioActive</title>
+	<link rel="stylesheet" type="text/css" href="./css/styleshirt.css">
+	<script type="text/javascript" src="./JS/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="./JS/jquery.elevatezoom.js"></script>
+	<link rel="icon" type="image/png" href="./img/icono2.png">
+	<script src="https://kit.fontawesome.com/de232ffb36.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div id="global">
+		<!--CABECERA DE LA PAGINA-->
+		<!---Parte del logo de la pagina-->
+		<header id="header">
+			<div id="logo">
+				<img src="./img/icono-page.png">
+				<h1>RadioActive</h1>
+			</div>
+			<nav id="navigation-bar">
+				<div id="options">
+					<ul id="list-options">
+						<li class="option first">
+							<a href="index.html">Inicio</a>
+						</li>
+						<li class="option first">
+							<a href="us.html">Nosotros</a>
+						</li>
+						<li class="option second">
+							<a href="terms-conditions.html">Terminos y Condiciones</a>
+						</li>
+						<li class="option third">
+							<a href="contact.html">Contactanos</a>
+						</li>
+						<li class="option fourth">
+							<a href="shopcart.html"><i class="fas fa-shopping-cart"></i></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!--CUERPO DE LA PAGINA-->
+		<section id="body">
+			<div id="name-shirt">
+				<h1>Astronaut Swing</h1>
+			</div>
+			<div id="photo">
+				<img id="zoom_05" src="./img/1.jpg" class="imagenlupa" data-zoom-image="./img/1-2.jpg">
+				<!--
+				<img src="./img/1.jpg" class="imagenlupa">
+				-->
+			</div>
+			<div id="price">
+				<h2>Precio</h2>
+				<h3>S/. 35.00</h3>
+			</div>
+			<form id="form-pay">
+				<div id="tallas">
+					<h4>Tallas</h4>
+					<p class="talla options">
+						<input type="radio" name="talla" value="talla">16
+						<input type="radio" name="talla" value="talla">S
+						<input type="radio" name="talla" value="talla">M
+						<input type="radio" name="talla" value="talla">L
+					</p>
+				</div>
+				<div id="colors">
+					<h4>Colores disponibles</h4>
+					<p class="color options">
+						<input type="radio" name="color" value="white">Blanco
+						<input type="radio" name="color" value="black">Negro
+						<input type="radio" name="color" value="green">Verde
+						<input type="radio" name="color" value="yellow">Amarillo
+					</p>
+				</div>
+				<div id="add-shopcart">
+					<button type="submit" disabled>Agregar al carrito</button>
+					<a href="shopcart.html"><i class="fas fa-shopping-cart"></i></a>
+				</div>
+			</form>
+			<div id="shirt-models">
+				<div>
+					<p>
+						Modelos del polo desde distintos angulos
+					</p>
+				</div>
+			</div>
+			<div id="description-shirt">
+				<p>
+					Descripcion del polo
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue nunc, posuere rhoncus posuere non, 
+					laoreet nec ante. Sed ullamcorper a nulla in blandit. Aenean at tincidunt ipsum. Nullam quis sollicitudin massa. 
+					Donec convallis porttitor metus, ac fermentum nulla posuere pellentesque. Duis vitae maximus massa, vel interdum est. 
+					Nullam bibendum mollis lectus a imperdiet. 
+				</p>
+			</div>
+			<div id="contacto">
+				<div class="redes">
+					<a href="#"><i class="fab fa-facebook-messenger">Messenger</i></a>
+				</div>
+				<div class="redes">
+					<a href="https://wa.link/3ujqwq" target="blank">
+						<i class="fab fa-whatsapp">WhatsApp</i>
+					</a>
+				</div>
+			</div>
+		</section>
+		<!--FOOTER DE LA PAGINA-->
+		<footer id="footer">
+			<div id="data-payment">
+				<h2>Metodos de Pago</h2>
+				<div id="icon-pay">
+					<img src="./img/lukita.png">
+					<img src="./img/visa.png">
+					<img src="./img/yape.png">
+				</div>
+			</div>
+			<div id="data-contact">
+				<h2>Siguenos</h2>
+				<a href="#">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+				<a href="#">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</div>
+			<div id="data-page">
+				<div>
+					&copy; RadioActive. Todos los derechos reservados. <br>Powered by <img id="programmer"
+						src="./img/brm.jpg">
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript" src="./JS/shirt-1.js"></script>
+</body>
+
+</html>
